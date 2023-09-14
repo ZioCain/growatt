@@ -50,15 +50,15 @@ This NODE-Implementation works with promise.
 const api = require('growatt')
 
 const user="xxx"
-const passwort="xx"
+const password="xxx"
 const options={}
 
 async function test() {
   const growatt = new api({})
-  let login = await growatt.login(user,passwort).catch(e => {console.log(e)})
-  console.log('login:',login)
+  let login = await growatt.login(user, password).catch(e => {console.log(e)})
+  console.log('login:', login)
   let getAllPlantData = await growatt.getAllPlantData(options).catch(e => {console.log(e)})
-  console.log('getAllPlatData:',JSON.stringify(getAllPlantData,null,' '));
+  console.log('getAllPlatData:', JSON.stringify(getAllPlantData,null,' '));
   let logout = await growatt.logout().catch(e => {console.log(e)})
   console.log('logout:',logout)
 }
@@ -104,7 +104,7 @@ There are several options for logging in:
 | passord   | String | -       | The password |
 
 ```
-  let login = await growatt.login(user,passwort).catch(e => {console.log(e)})
+  let login = await growatt.login(user,password).catch(e => {console.log(e)})
 ```
 
 With resolve, the response from the website is returned.
