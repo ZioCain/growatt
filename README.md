@@ -58,7 +58,7 @@ async function test() {
   let login = await growatt.login(user, password).catch(e => {console.log(e)})
   console.log('login:', login)
   let getAllPlantData = await growatt.getAllPlantData(options).catch(e => {console.log(e)})
-  console.log('getAllPlatData:', JSON.stringify(getAllPlantData,null,' '));
+  console.log('getAllPlantData:', JSON.stringify(getAllPlantData,null,' '));
   let logout = await growatt.logout().catch(e => {console.log(e)})
   console.log('logout:',logout)
 }
@@ -178,7 +178,7 @@ In response, an object comes out that contains the data of the length.
 ```
   options = {plantData:false,deviceData:true,deviceTyp:true,weather:false,chartLastArray:true}
   let getAllPlantData = await growatt.getAllPlantData(options).catch(e => {console.log(e)})
-  console.log('getAllPlatData:',JSON.stringify(getAllPlantData,null,' '));
+  console.log('getAllPlantData:',JSON.stringify(getAllPlantData,null,' '));
 ```
 
 ## Logout
