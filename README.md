@@ -12,7 +12,7 @@
 > this is an Node for the API on the Growatt&copy; Shine Webserver.
 > (Shine provided by Growatt&copy;. I'm not affiliated.)
 
-This implementation is based on the refectured eebinterface from Growatt&copy Shine.
+This implementation is based on the refectured webinterface from Growatt&copy Shine.
 
 # Install
 
@@ -81,7 +81,7 @@ The constructor has a config object as parameter. This is optional.
 
 | config           | Type     | Default                      | Description                                                                                                                   |
 | ---------------- | -------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| server           | String   | 'https://server.growatt.com' | The Growatt server                                                                                                            |
+| server           | String   | https://server.growatt.com   | The Growatt server                                                                                                            |
 | indexCandI       | Boolean  | false                        | Set to true if your Growatt page Plant is a C&I Plant page with indexbC or plantDo in the Path from the Growatt webinterface. |
 | timeout          | Integer  | 5000                         | Session timeout in ms.                                                                                                        |
 | headers          | Object   | {}                           | custom header like {'X-Custom-Header': 'foobar'}.                                                                             |
